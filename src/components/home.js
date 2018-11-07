@@ -6,6 +6,7 @@ import Event from './event';
 import Recent from "./recent";
 import TechBuffalo from './techbuffalo';
 import Footer from './footer';
+import './home.css';
 
 class HomePage extends Component {
     
@@ -14,7 +15,7 @@ class HomePage extends Component {
         return (
             <div>
                 <Nav />
-                <div>
+                <div className = "body-container">
                     <Featured />
                     <Now />
                     <Event />
