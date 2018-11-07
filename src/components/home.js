@@ -20,9 +20,9 @@ class HomePage extends Component {
                     <Now />
                     <Event />
                     <Recent />
+                    <TechBuffalo />
+                    <Footer />
                 </div>
-                <TechBuffalo />
-                <Footer />
             </div>
         )
     }
