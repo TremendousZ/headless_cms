@@ -1,0 +1,43 @@
+.now-container {
+    margin: 0 auto;
+    width: 70%;
+    height: 50%;
+    position: relative;
+}
+
+.now-container > span{
+    position: absolute;
+    transform: rotate(270deg);
+    left:-3.5%;
+    top:0%;
+    color:#b3b3b3;
+}
+
+.now-box {
+    width: 100%;
+    height: 100%;
+}
+
+.now-feature{
+    vertical-align: top;
+    width:47%;
+    height:100%;
+    display: inline-block;
+}
+
+.feature-1{
+    margin-right: 5%;
+}
+
+.now-placeholder{
+    width: 100%;
+    height: 80%;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+.now-text{
+    text-align: center;
+    margin:5%;
+    font-size: 20px;
+}

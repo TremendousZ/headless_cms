@@ -10,12 +10,17 @@
     right:0;
     top:0;
     position: fixed;
+    z-index: 2;
+}
+
+.nav-container > span{
+    
 }
 
 .nav-wrapper{
     padding:10px;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-around;   
 }
 
 .logo{
@@ -24,9 +29,9 @@
 }
 
 .search-bar{
-    height:36px;
-    width:25%;
-    transform: translateX(-50%);
+    height: 36px;
+    width: 15%;
+    transform: translateX(-100%);
 }
 
 
