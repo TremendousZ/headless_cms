@@ -16,6 +16,7 @@ class Recent extends Component{
                     <Post />
                     <Post />
                 </div>
+                <div className = "recent-pagination"> 1 2 3 4 5 6</div>
             </div>
         )
     }
