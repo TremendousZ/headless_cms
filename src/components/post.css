@@ -7,9 +7,10 @@
 }
 
 .post-placeholder{
-    margin:8% 5%;
+    margin: 8% 5%;
     border: 1px solid greenyellow;
-    height: 27vh;
+    height: 30vh;
+    width: 90%;
 }
 
 .post-title{
