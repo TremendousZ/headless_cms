@@ -35,6 +35,9 @@
 
 .techbuffalo-posts{
     height: 85%;
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
 }
 
 .techbuffalo-posts .post-container .post-link,.techbuffalo-posts .post-container .post-title{

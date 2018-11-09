@@ -6,7 +6,6 @@ class Post extends Component {
     constructor(props){
         super(props);
         this.state= {
-            response:null,
             imageURL:""
         }
     }
@@ -21,14 +20,12 @@ class Post extends Component {
         }
         let dataURL = "https://thenerdy.com/wp-json/wp/v2/media/" + this.props.id ;
         const resp = await axios.get(dataURL);
-        console.log("post image response", resp);
         this.setState({
             imageURL:resp.data.guid.rendered
         })
     }
 
     render(){
-        console.log("tis posts props" , this.props);
         return (
             <div className = "post-container">
                 <img src = {this.state.imageURL} className = "post-placeholder"/>
