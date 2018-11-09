@@ -14,35 +14,56 @@ class HomePage extends Component {
     constructor(props){
         super(props);
         this.state = {
-            response: ""
+            response: null,
+            site:""
         }
     }
-   
-    render(){
+
+    async componentDidMount(){
+        this.getData();
+        this.getMore();
+    }
+
+    async getData(){
+        let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts";
+        await axios.get(dataURL,{
+            params: {
+                per_page:20
+            }
+        }).then(response=>{
+            this.setState({response});
+            console.log("State Set!");
+        });
+    }
+
+    async getMore(){
+        let dataURL = "https://thenerdy.com/wp-json/";
+        const respObj = await axios.get(dataURL)
+            console.log("LOOK FOR MORE HERE RESPONSE OBJECT" , respObj);
         
+    }
+
+    render(){
         const { response } = this.state;
-        let post1, post2;
-        console.log("RESPONSSSSSEE!!!" , response);
-        if(response == true){
-            post1 = this.state.response.data[0];
-            post2 = this.state.response.data[1];
+        if(this.state.response == null){
+            return (<div>Loading</div>)
         } else {
-            post1 = "";
-            post2="";
-        }
-        return (
-            <div>
-                <Nav />
-                <div className = "body-container">
-                    <Featured />
-                    <Now  post1 = {post1} post2 = {post2}/>
-                    <Event />
-                    <Recent postList = {response} />
-                    <TechBuffalo />
-                    <Footer />
+            console.log("this home state", this.state.response, response);
+            return (
+                <div>
+                    <Nav />
+                    <div className = "body-container">
+                        <Featured />
+                        <Now  post1 = {response.data[0]} post2 = {response.data[1]}/>
+                        <Event />
+                        <Recent postList = {response} />
+                        <TechBuffalo />
+                        <Footer />
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
+       
     }
 }
 export default HomePage;
