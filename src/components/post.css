@@ -1,14 +1,12 @@
 .post-container {
     height:100%;
     width: 33%;
-    border: 1px solid blue;
     display: inline-block;
     vertical-align: top;
 }
 
 .post-placeholder{
     margin: 8% 5%;
-    border: 1px solid greenyellow;
     height: 30vh;
     width: 90%;
     object-fit: cover;

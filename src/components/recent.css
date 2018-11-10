@@ -21,5 +21,19 @@
 .recent-pagination{
     text-align: center;
     padding: 5%;
+    display: flex;
+    justify-content: center;
+}
 
+.recent-pagination a {
+    width: 3%;
+    height: 5vmin;
+    margin: 1%;
+    background-color: #FBBE00;
+    color: white;
+
+}
+
+.recent-pagination a:hover{
+    background-color: black;
 }

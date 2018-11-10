@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Post from './post';
 import './recent.css';
+import {Link} from "react-router-dom";
 
 
 class Recent extends Component{
@@ -37,7 +38,15 @@ class Recent extends Component{
                 <div className = "recent-name">RECENT</div>
                   {this.state.cardContainer}
                 </div>
-                <div className = "recent-pagination"> 1 2 3 4 5 6</div>
+                <div className = "recent-pagination">
+                    <Link to="/">1</Link>
+                    <Link to ="/page/2">2</Link>
+                    <Link to="/page/3">3</Link>
+                    <Link to="/page/4">4</Link>
+                    <Link to="/page/5">5</Link>
+                    <div>...</div>
+                    <Link to="/page/39">39</Link>
+                </div>
             </div>
         )
     }
