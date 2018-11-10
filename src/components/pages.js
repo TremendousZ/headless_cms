@@ -1,46 +1,43 @@
-import React, {Component} from "react";
-import Nav from './nav';
-import Featured from './featured';
+import React, {Component} from 'react';
 import Now from './now';
-import Event from './event';
 import Recent from "./recent";
-import TechBuffalo from './techbuffalo';
-import Footer from './footer';
 import './home.css';
+import Nav from './nav';
 import axios from 'axios';
+import Footer from './footer';
 
-class HomePage extends Component {
-    
+class Pages extends Component {
     constructor(props){
         super(props);
         this.state = {
-            response: null,
-            site:""
+            page:"",
+            response: null
         }
+
     }
 
     async componentDidMount(){
+        const {page_number} = this.props.match.params
+        this.setState({
+            page: page_number
+        })
         this.getData();
-        this.getMore();
     }
 
     async getData(){
+        debugger;
+        let offsetNumber = parseFloat(this.props.match.params.page_number);
+        let offset = offsetNumber * 20;
         let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts";
         await axios.get(dataURL,{
             params: {
                 per_page:20,
+                offset
             }
         }).then(response=>{
             this.setState({response});
             console.log("State Set!");
         });
-    }
-
-    async getMore(){
-        let dataURL = "https://thenerdy.com/wp-json/";
-        const respObj = await axios.get(dataURL)
-            console.log("LOOK FOR MORE HERE RESPONSE OBJECT" , respObj);
-        
     }
 
     render(){
@@ -53,17 +50,14 @@ class HomePage extends Component {
                 <div>
                     <Nav />
                     <div className = "body-container">
-                        <Featured />
-                        <Now  post1 = {response.data[0]} post2 = {response.data[1]}/>
-                        <Event />
+                        <Now  post1 = {response.data[0]} post2 = {response.data[1]} />
                         <Recent postList = {response} />
-                        <TechBuffalo />
                         <Footer />
                     </div>
                 </div>
             )
         }
-       
     }
 }
-export default HomePage;
+
+export default Pages;
