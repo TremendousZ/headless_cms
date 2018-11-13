@@ -31,7 +31,7 @@
     margin: 1%;
     background-color: #FBBE00;
     color: white;
-
+    text-decoration: none;
 }
 
 .recent-pagination a:hover{
