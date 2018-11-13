@@ -56,7 +56,7 @@ class HomePage extends Component {
                         <Featured />
                         <Now  post1 = {response.data[0]} post2 = {response.data[1]}/>
                         <Event />
-                        <Recent postList = {response} />
+                        <Recent postList = {response} fromPages="false" />
                         <TechBuffalo />
                         <Footer />
                     </div>

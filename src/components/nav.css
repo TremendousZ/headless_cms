@@ -18,6 +18,8 @@
     
 }
 
+
+
 .nav-wrapper{
     padding:10px;
     display: flex;
@@ -25,8 +27,11 @@
 }
 
 .logo{
-    height:36px;
+    height: 36px;
     width: 33%;
+    background-image: url("../assets/images/nerdy-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .search-bar{

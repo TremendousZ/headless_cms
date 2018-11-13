@@ -13,6 +13,7 @@ class Pages extends Component {
             page:"",
             response: null
         }
+        this.startingPage;;
 
     }
 
@@ -26,8 +27,8 @@ class Pages extends Component {
 
     async getData(){
         debugger;
-        let offsetNumber = parseFloat(this.props.match.params.page_number);
-        let offset = offsetNumber * 20;
+        this.startingPage = parseFloat(this.props.match.params.page_number);
+        let offset = this.startingPage * 20;
         let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts";
         await axios.get(dataURL,{
             params: {
@@ -51,7 +52,7 @@ class Pages extends Component {
                     <Nav />
                     <div className = "body-container">
                         <Now  post1 = {response.data[0]} post2 = {response.data[1]} />
-                        <Recent postList = {response} />
+                        <Recent postList = {response} fromPages = "true" startingPage={this.startingPage} />
                         <Footer />
                     </div>
                 </div>
