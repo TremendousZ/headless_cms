@@ -26,7 +26,6 @@ class Pages extends Component {
     }
 
     async getData(){
-        debugger;
         this.startingPage = parseFloat(this.props.match.params.page_number);
         let offset = this.startingPage * 20;
         let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts";
@@ -37,16 +36,19 @@ class Pages extends Component {
             }
         }).then(response=>{
             this.setState({response});
-            console.log("State Set!");
         });
     }
 
     render(){
         const { response } = this.state;
         if(this.state.response == null){
-            return (<div>Loading</div>)
+            return (
+                    <div>
+                        <Nav /> 
+                        <div>Loading</div>
+                    </div>
+                )
         } else {
-            console.log("this home state", this.state.response, response);
             return (
                 <div>
                     <Nav />

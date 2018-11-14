@@ -31,7 +31,6 @@ class Recent extends Component{
     }
 
     render(){
-        console.log("ReCent Props", this.props);
         return(
             <div className = "recent-container">
                 <div className = "recent-content">

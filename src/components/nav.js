@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Menu from "./menu";
 import {Link} from 'react-router-dom';
 import "./nav.css";
-import Logo from "../assets/images/nerdy-logo.png";
+
 
 
 class Nav extends Component {
@@ -14,7 +14,6 @@ class Nav extends Component {
             <div className = "nav-container">
                 <div className="nav-wrapper">
                     <div className = "logo"> 
-                        {/* <img src = {Logo} />  */}
                     </div>
                     <input className = "search-bar" placeholer ={searchBarPlaceholderText} />
                     <Menu />

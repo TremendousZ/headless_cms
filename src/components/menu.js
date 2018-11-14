@@ -3,11 +3,17 @@ import './menu.css';
 
 class Menu extends Component {
 
+
+    handleClick(){
+        
+    }
+
+
     render (){
         return (
             <div>
-                <div>
-                    Menu 
+                <div className = "dropdown-trigger" onClick= {this.handleClick.bind(this)}>
+                    MENU  <i className ="fa fa-bars"></i>
                 </div>
                 <div className = "menu-dropdown">
                     <div className ="menu-pages">

@@ -19,7 +19,6 @@ class Pagination extends Component {
             let startingPage = this.props.startingPage;
             for(let index = startingPage; index < startingPage + 9; index++){
                 let linkTo = `/page/${index}/`;
-                console.log("CHECK linkTO", linkTo);
                 let links = <Link to ={linkTo} key ={Math.random()*10}>{index}</Link>;
                 this.linkContainer.push(links);
             }
