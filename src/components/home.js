@@ -1,11 +1,8 @@
 import React, {Component} from "react";
-import Nav from './nav';
 import Featured from './featured';
 import Now from './now';
 import Event from './event';
 import Recent from "./recent";
-import TechBuffalo from './techbuffalo';
-import Footer from './footer';
 import './home.css';
 import axios from 'axios';
 
@@ -46,24 +43,16 @@ class HomePage extends Component {
         const { response } = this.state;
         if(this.state.response == null){
             return (
-                <div>
-                    <Nav />
-                    <div>Loading</div>
-                </div>
+                <div>Loading</div>
                 )
         } else {
             return (
-                <div>
-                    <Nav />
                     <div className = "body-container">
                         <Featured />
                         <Now  post1 = {response.data[0]} post2 = {response.data[1]}/>
                         <Event />
                         <Recent postList = {response} fromPages="false" />
-                        <TechBuffalo />
-                        <Footer />
                     </div>
-                </div>
             )
         }
        
