@@ -1,0 +1,40 @@
+.profile-container {
+    width: 31%;
+    padding-top: 2%;
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+.profile-post{
+    width:100%;
+    height:45vh;   
+}
+
+.profile-post img{
+    background-color:black;
+    height: 65%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.profiles{
+    width:80%;
+    margin: 1% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-name{
+    font-size:28px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1% 0;
+}
+
+.profile-post-link{
+    text-align: center;
+    color:#FBBE00;
+    font-size:14px;
+}

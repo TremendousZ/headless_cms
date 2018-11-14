@@ -28,7 +28,7 @@ class Menu extends Component {
     render (){
         return (
             <div onMouseLeave = {this.handleLeave}>
-                <div className = "dropdown-trigger" onMouseEnter= {this.handleHover}>
+                <div className = "dropdown-trigger" onClick= {this.handleHover}>
                     MENU  <i className ="fa fa-bars"></i>
                     
                 </div>
