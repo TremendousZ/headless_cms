@@ -2,6 +2,19 @@
     line-height:180%;
 }
 
+.dropdown-trigger{
+    padding: 1% 1.5%;
+    position: absolute;
+    top:0;
+    right:6.5%;
+}
+
+.dropdown-trigger:hover{
+    background-color: #FBBE00;
+    color: white;
+    cursor: pointer;
+}
+
 .menu-dropdown{
     width:72%;
     position: absolute;

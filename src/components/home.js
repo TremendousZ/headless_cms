@@ -32,7 +32,6 @@ class HomePage extends Component {
             }
         }).then(response=>{
             this.setState({response});
-            console.log("State Set!");
         });
     }
 
@@ -46,9 +45,13 @@ class HomePage extends Component {
     render(){
         const { response } = this.state;
         if(this.state.response == null){
-            return (<div>Loading</div>)
+            return (
+                <div>
+                    <Nav />
+                    <div>Loading</div>
+                </div>
+                )
         } else {
-            console.log("this home state", this.state.response, response);
             return (
                 <div>
                     <Nav />
