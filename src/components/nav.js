@@ -9,13 +9,18 @@ class Nav extends Component {
 
     render(){
 
-        let searchBarPlaceholderText = "Locate your keys.";
+        let searchBarPlaceholderText = "Find anything.";
         return (
             <div className = "nav-container">
                 <div className="nav-wrapper">
                     <Link to ="/" className = "logo"> 
                     </Link>
-                    <input className = "search-bar" placeholer ={searchBarPlaceholderText} />
+                    <form className = "search-container">
+                        <input className = "search-bar" placeholder ={searchBarPlaceholderText} /> 
+                        <label className = "search-icon">
+                            <i className = "fa fa-search"></i>
+                        </label>
+                    </form>
                     <Menu />
                 </div>
             </div>
