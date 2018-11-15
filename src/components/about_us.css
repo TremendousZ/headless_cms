@@ -1,0 +1,32 @@
+.about-us-content{
+    background: white;
+    width:85%;
+    margin: 15px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+    margin-top: 3%;
+}
+
+.about-us-title{
+    text-align: center;
+    display:block;
+    font-size: 3rem;
+    padding-top: 6%;
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #e6e6e6;
+    width: 80%;
+    margin:0 auto;
+}
+
+.about-us-description{
+    width: 60%;
+    margin:3% auto;
+}
+
+.about-us-image{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 5%;
+}

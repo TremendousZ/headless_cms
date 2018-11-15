@@ -4,12 +4,12 @@ import {Link} from 'react-router-dom';
 class DropDown extends Component {
     render(){
         return (
-            <div className = "menu-dropdown">
+            <div className = "menu-dropdown" onClick={this.props.handleClose}>
                     <div className ="menu-pages">
                     <label>PAGES</label>
                         <ul>
-                            <li><Link to='/crew-2/'>THE CREW</Link></li>
-                            <li>ABOUT US</li>
+                            <li><Link to='/crew/'>THE CREW</Link></li>
+                            <li><Link to='/about-us/'>ABOUT US</Link></li>
                             <li>NEWS TIPS</li>
                             <li>ADVERTISE WITH US</li>
                             <li>PRIVACY POLICY</li>

@@ -7,6 +7,7 @@
     position: absolute;
     top:0;
     right:6.5%;
+    z-index: 1;
 }
 
 .dropdown-trigger:hover{ 
@@ -21,8 +22,8 @@
     right:-5%;
     top:56px;
     display: block;
-    z-index: -1;
     overflow: hidden;
+    z-index: -1;
 }
 
 .menu-dropdown label, .menu-sections label{
