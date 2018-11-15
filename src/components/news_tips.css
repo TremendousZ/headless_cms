@@ -1,0 +1,79 @@
+.news-tips-content{
+    background: white;
+    width:85%;
+    margin: 15px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+    margin-top: 3%;
+}
+
+.news-tips-title{
+    text-align: center;
+    display:block;
+    padding-top: 6%;
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #e6e6e6;
+    width: 80%;
+    margin:0 auto;
+}
+
+.news-tips-form {
+    width: 60%;
+    margin:3% auto;
+}
+
+.news-tip-instruction{
+    font-family: 'Helvetica Neue', helvetica, sans-serif;
+}
+.news-tips-form input{
+    display: block;
+    width: 40%;
+    height: 36px;
+}
+.news-tips-form label{
+    display: block;
+    width: 40%;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+.confirm-email, .email-input, .email-input-label, .email-confirm-label{
+    display:inline-block !important;
+    margin-right: 2.5%;
+}
+
+.tip-title{
+    display:block;
+    font-size: 1.24rem;
+    padding-top: 6%;
+    font-weight: 600;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+    margin:0 auto;
+}
+
+.news-tips-form textarea{
+    width: 100%;
+    height:160px;
+}
+
+.image-url-input ,.video-url-input{
+    width:95% !important;
+    display: inline-block !important;
+    margin-right: .5%;
+}
+
+.consent-statement{
+    width:80% !important;
+}
+
+.tip-form-submit{
+    margin-bottom: 5%;
+    width: 10%;
+    background-color: #FBBE00;
+    color: white;
+    height: 36px;
+}

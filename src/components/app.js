@@ -7,6 +7,7 @@ import Nav from './nav';
 import Categories from './categories';
 import TechBuffalo from './techbuffalo';
 import Footer from './footer'; 
+import NewsTips from './news_tips';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 const App = () => (
@@ -16,8 +17,9 @@ const App = () => (
                 <Nav />
                 <Route exact path ='/' component = {HomePage} />
                 <Route exact path = '/page/:page_number/' component = {Pages} />
-                <Route path = '/crew/' component = {TheCrew} />
-                <Route path = '/about-us/' component = {AboutUs} />
+                <Route exact path = '/crew/' component = {TheCrew} />
+                <Route exact path = '/about-us/' component = {AboutUs} />
+                <Route exact path = '/news-tips/' component = {NewsTips} />
                 <Route path = '/category/:category/:categoryName/' component = {Categories} />
                 <Route path = '/:category/:categoryName' component = {Categories} />
                 <TechBuffalo />
