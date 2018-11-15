@@ -18,6 +18,12 @@ class Menu extends Component {
         })
     }
 
+    handleClose = () => {
+        this.setState({
+            showMenu:false
+        })
+    }
+
 
 
     render (){
@@ -32,7 +38,7 @@ class Menu extends Component {
                 transitionEnterTimeout={500}
                 transitionLeaveTimeout={500}
                 >
-                    { this.state.showMenu && <DropDown /> }   
+                    { this.state.showMenu && <DropDown  handleClose={this.handleClose.bind(this)}/> }   
                 </CSSTransitionGroup>
             </div>
         )
