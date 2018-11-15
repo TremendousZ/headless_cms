@@ -104,6 +104,10 @@ a{
     text-decoration: none;
 }
 
+.menu-links li:hover{
+    color: #FBBE00;
+}
+
 .slide-enter {
     transform: translateY(-100%);
     transition: .5s cubic-bezier(0, 1, 0.5, 1);

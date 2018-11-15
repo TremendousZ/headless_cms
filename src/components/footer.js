@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import {Link} from 'react-router-dom';
 
 export default ()=> {
     return (
@@ -9,7 +10,7 @@ export default ()=> {
                 © 2018 TechnoBuffalo LLC. All Rights Reserved.
                 </div>
                 <ul className ="footer-links">
-                    <li>Our Crew</li>
+                    <li><Link to = '/crew-2/' >Our Crew</Link></li>
                     <li>About Us</li>
                     <li>Contact Us</li>
                     <li>Privacy Policy</li>

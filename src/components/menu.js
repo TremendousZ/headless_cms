@@ -12,23 +12,18 @@ class Menu extends Component {
         }
     }
 
-    handleHover = () =>{
+    handleClick = () =>{
         this.setState({
-            showMenu: true
+            showMenu: !this.state.showMenu
         })
     }
 
-    handleLeave = () => {
-        this.setState({
-            showMenu: false
-        })
-    }
 
 
     render (){
         return (
-            <div onMouseLeave = {this.handleLeave}>
-                <div className = "dropdown-trigger" onClick= {this.handleHover}>
+            <div>
+                <div className = "dropdown-trigger" onClick= {this.handleClick.bind(this)}>
                     MENU  <i className ="fa fa-bars"></i>
                     
                 </div>

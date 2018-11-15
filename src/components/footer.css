@@ -36,6 +36,10 @@
     border-right: 1px solid #b3b3b3;
     
 }
+.footer-links li:hover{
+    color:#D9A613;
+}
+
 
 .footer-links li:nth-child(6){
     border-right: none;
