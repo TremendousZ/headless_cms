@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class DropDown extends Component {
     render(){
@@ -7,7 +8,7 @@ class DropDown extends Component {
                     <div className ="menu-pages">
                     <label>PAGES</label>
                         <ul>
-                            <li>THE CREW</li>
+                            <li><Link to='/crew-2/'>THE CREW</Link></li>
                             <li>ABOUT US</li>
                             <li>NEWS TIPS</li>
                             <li>ADVERTISE WITH US</li>
@@ -17,26 +18,26 @@ class DropDown extends Component {
                     <div className = "menu-sections">
                     <label>SECTIONS</label>
                         <ul>
-                            <li>ANIME NEWS</li>
-                            <li>COMIC NEWS</li>
-                            <li>GAMING NEWS</li>
-                            <li>GAMING RUMORS</li>
-                            <li>MOVIE NEWS</li>
-                            <li>MOVIE RUMORS</li>
-                            <li>MOVIE TRAILERS</li>
-                            <li>TOY ANNOUNCEMENTS</li>
-                            <li>TOY NEWS</li>
-                            <li>TOY RUMORS</li>
-                            <li>TV FEATURES</li>
-                            <li>TV NEWS</li>
+                            <li><Link to = "/category/anime/anime-news/">ANIME NEWS</Link></li>
+                            <li><Link to = "/category/comics/comic-news/">COMIC NEWS</Link></li>
+                            <li><Link to = "/category/gaming/gaming-news/">GAMING NEWS</Link></li>
+                            <li><Link to ="/category/gaming/gaming-rumors/">GAMING RUMORS</Link></li>
+                            <li><Link to = "/category/movies/movie-news/">MOVIE NEWS</Link></li>
+                            <li><Link to = "/category/movies/movie-rumors/">MOVIE RUMORS</Link></li>
+                            <li><Link to = "/category/movies/movie-trailers/">MOVIE TRAILERS</Link></li>
+                            <li><Link to = "/category/toys/toy-announcements/">TOY ANNOUNCEMENTS</Link></li>
+                            <li><Link to = "/category/toys/toy-news/">TOY NEWS</Link></li>
+                            <li><Link to = "/category/toys/toy-rumors/">TOY RUMORS</Link></li>
+                            <li><Link to = "/category/tv/tv-features/">TV FEATURES</Link></li>
+                            <li><Link to = "/category/tv/tv-news/">TV NEWS</Link></li>
                         </ul>
                     </div>
                     <div className = "menu-links">
                         <ul>
-                            <li>ALL NEWS</li>
-                            <li>REVIEWS</li>
-                            <li>GALLERIES</li>
-                            <li>GIVEAWAYS</li>
+                            <li><Link to = "/">ALL NEWS</Link></li>
+                            <li><Link to = "/label/reviews">REVIEWS</Link></li>
+                            <li><Link to = "/label/gallery/">GALLERIES</Link></li>
+                            <li><Link to = "/label/giveaway/">GIVEAWAYS</Link></li>
                         </ul>
                     </div>
                 </div>
