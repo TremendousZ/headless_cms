@@ -37,7 +37,7 @@ class Menu extends Component {
                 transitionEnterTimeout={500}
                 transitionLeaveTimeout={500}
                 >
-                { this.state.showMenu && <DropDown /> }   
+                    { this.state.showMenu && <DropDown /> }   
                 </CSSTransitionGroup>
             </div>
         )

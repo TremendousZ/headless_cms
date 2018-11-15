@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import Profile from './profile';
 import './the_crew.css';
-import TechBuffalo from "./techbuffalo";
-import Footer from './footer';
 
 class TheCrew extends Component {
     constructor(props){
@@ -20,7 +18,7 @@ class TheCrew extends Component {
     buildProfiles(){
         let crewNames = ["Jon Rettinger", "Sean P. Aune", "Brandon Russell", "Eric Fredericksen","Danny Zepeda", "Ron Duwell"];
         for(let index = 0; index < 6; index++){
-          let profilePost = <Profile profileName = {crewNames[index]} />
+          let profilePost = <Profile profileName = {crewNames[index]}key = {Math.random()*10}/>
           this.crew.push(profilePost);
         }
         this.setState({

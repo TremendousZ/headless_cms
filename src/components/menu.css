@@ -48,6 +48,10 @@
     list-style-type: none;
     display: block;
 }
+.menu-pages li:hover{
+    color:black;
+}
+
 
 .menu-sections{
     height:100%;
@@ -64,11 +68,20 @@
     padding: 26px 1rem;
 }
 
-.menu-sections li{
+.menu-sections li {
     list-style-type: none;
     width: 33%;
     display: inline-block;
     padding: 0 1rem;
+    
+}
+.menu-sections li:hover{
+    color:#FBBE00;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
 }
 
 .menu-links{
@@ -85,9 +98,10 @@
     padding: 16px 1rem;
 }
 
-.menu-links li{
+.menu-links li, .menu-links a{
     list-style-type: none;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .slide-enter {

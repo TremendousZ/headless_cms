@@ -13,8 +13,8 @@ class Nav extends Component {
         return (
             <div className = "nav-container">
                 <div className="nav-wrapper">
-                    <div className = "logo"> 
-                    </div>
+                    <Link to ="/" className = "logo"> 
+                    </Link>
                     <input className = "search-bar" placeholer ={searchBarPlaceholderText} />
                     <Menu />
                 </div>
