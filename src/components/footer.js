@@ -10,10 +10,10 @@ export default ()=> {
                 © 2018 TechnoBuffalo LLC. All Rights Reserved.
                 </div>
                 <ul className ="footer-links">
-                    <li><Link to = '/crew/1/' >Our Crew</Link></li>
-                    <li>About Us</li>
+                    <li><Link to = '/crew/' >Our Crew</Link></li>
+                    <li><Link to = '/about-us/' >About Us</Link></li>
                     <li>Contact Us</li>
-                    <li>Privacy Policy</li>
+                    <li><Link to = '/privacy' >Privacy Policy</Link></li>
                     <li>Term of Use</li>
                     <li>All Categories</li>
                 </ul>

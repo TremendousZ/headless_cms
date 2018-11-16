@@ -12,7 +12,7 @@ class DropDown extends Component {
                             <li><Link to='/about-us/'>ABOUT US</Link></li>
                             <li><Link to ='/news-tips/'>NEWS TIPS</Link></li>
                             <li><Link to ='/advertise/'>ADVERTISE WITH US</Link></li>
-                            <li>PRIVACY POLICY</li>
+                            <li><Link to ='/privacy/'>PRIVACY POLICY</Link></li>
                         </ul>
                     </div>
                     <div className = "menu-sections">
