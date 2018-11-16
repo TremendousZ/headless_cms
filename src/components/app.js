@@ -9,6 +9,7 @@ import TechBuffalo from './techbuffalo';
 import Advertise from './advertise_with_us';
 import Footer from './footer'; 
 import NewsTips from './news_tips';
+import PrivacyPolicy from './privacy-policy';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 const App = () => (
@@ -24,6 +25,7 @@ const App = () => (
                 <Route path = '/category/:category/:categoryName/' component = {Categories} />
                 <Route path = '/:category/:categoryName' component = {Categories} />
                 <Route exact path = '/advertise/' component = {Advertise} />
+                <Route exact path = '/privacy/' component = {PrivacyPolicy} />
                 <TechBuffalo />
                 <Footer />
             </div>
