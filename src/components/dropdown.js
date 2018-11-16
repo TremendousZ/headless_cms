@@ -11,7 +11,7 @@ class DropDown extends Component {
                             <li><Link to='/crew/'>THE CREW</Link></li>
                             <li><Link to='/about-us/'>ABOUT US</Link></li>
                             <li><Link to ='/news-tips/'>NEWS TIPS</Link></li>
-                            <li>ADVERTISE WITH US</li>
+                            <li><Link to ='/advertise/'>ADVERTISE WITH US</Link></li>
                             <li>PRIVACY POLICY</li>
                         </ul>
                     </div>

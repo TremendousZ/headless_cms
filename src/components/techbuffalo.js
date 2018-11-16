@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import Post from './post';
 import './techbuffalo.css';
-import TLogo from "../assets/images/Technobuffalo-Logo (2).png";
+import TLogo from "../assets/images/Technobuffalo-Logo (1).png";
 
 class TechBuffalo extends Component{
 

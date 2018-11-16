@@ -1,0 +1,39 @@
+.advertise-container{
+    background: white;
+    width:85%;
+    margin: 15px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+    margin-top: 10%;
+}
+
+.advertise-image{
+    background-image: url("../assets/images/forrest.jpeg");
+    height:75vh;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+.advertise-image p{
+    z-index: 2;
+    color:white;
+    font-size: 48px;
+    text-align:center;
+    text-shadow: 1px 1px black;
+    position: relative;
+    top:65%;
+}
+
+.advertise-traffic-title{
+    text-align: center;
+    display:block;
+    padding-top: 2%;
+    font-size: 36px;
+    font-weight: 800;
+    width: 80%;
+    margin:0 auto;
+}
+
+.advertise-map-image{
+    background-image:url("../assets/images/tb-adv-world-map.jpg");
+    height:90vh;
+}

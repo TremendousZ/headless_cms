@@ -6,6 +6,7 @@ import AboutUs from './about_us';
 import Nav from './nav';
 import Categories from './categories';
 import TechBuffalo from './techbuffalo';
+import Advertise from './advertise_with_us';
 import Footer from './footer'; 
 import NewsTips from './news_tips';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -22,6 +23,7 @@ const App = () => (
                 <Route exact path = '/news-tips/' component = {NewsTips} />
                 <Route path = '/category/:category/:categoryName/' component = {Categories} />
                 <Route path = '/:category/:categoryName' component = {Categories} />
+                <Route exact path = '/advertise/' component = {Advertise} />
                 <TechBuffalo />
                 <Footer />
             </div>
