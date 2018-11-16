@@ -23,8 +23,23 @@
     top:65%;
 }
 
-.advertise-traffic-title{
+.advertise-traffic-title, .gender-breakdown{
     text-align: center;
+    display:block;
+    padding-top: 2%;
+    font-size: 36px;
+    font-weight: 800;
+    width: 80%;
+    margin:0 auto;
+}
+
+.gender-breakdown{
+    margin-top: 5%;
+    border-top:1px solid #e6e6e6;
+    border-bottom:1px solid #e6e6e6;
+}
+
+.operating-system-breakdown{
     display:block;
     padding-top: 2%;
     font-size: 36px;
@@ -36,4 +51,53 @@
 .advertise-map-image{
     background-image:url("../assets/images/tb-adv-world-map.jpg");
     height:90vh;
+}
+
+.user-breakdown-image{
+    background-image: url("../assets/images/tb-adv-user-os.jpg");
+    height: 71vh;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.advertise-text{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.advertise-form input:nth-child(-n+6){
+    display: block;
+    width: 45%;
+    height: 36px;
+}
+.advertise-form label{
+    display: block;
+    width: 40%;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 1% 0;
+}
+
+.advertise-form textarea{
+    width: 100%;
+    height:160px;
+}
+
+
+.advertise-form button{
+    width: 10%;
+    height:10%;
+    background-color: #FBBE00;
+    color: white;
+    height: 36px;
+    font-size: 15px;
+    display: block;
+    
+}
+
+.contact-consent, .consent-label{
+    display:inline-block !important;
+    width:10% !important;
 }
