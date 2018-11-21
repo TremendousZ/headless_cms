@@ -30,7 +30,7 @@ class Menu extends Component {
         return (
             <div>
                 <div className = "dropdown-trigger" onClick= {this.handleClick.bind(this)}>
-                    MENU  <i className ="fa fa-bars"></i>
+                   <span>MENU  </span> <i className ="fa fa-bars"></i>
                     
                 </div>
                 <CSSTransitionGroup

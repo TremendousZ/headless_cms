@@ -14,7 +14,7 @@
     position: absolute;
     transform: rotate(270deg);
     left:11.5%;
-    top:1.4%;
+    top:2%;
     color:#b3b3b3;
 }
 
@@ -44,4 +44,22 @@
 .image-placeholder{
     background-color: aqua;
     height: 100%;
+}
+
+
+@media only screen and (max-width:600px){
+    .label{
+        position: relative;
+        text-align: center;
+        margin: 5%;
+        transform: rotate(0deg);
+        left:0%;
+
+    }
+    .featured-carousel{
+        overflow:hidden;
+    }
+    .featured-container{
+        margin:5% auto 14%;
+    }
 }
