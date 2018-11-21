@@ -1,9 +1,10 @@
 
 .techbuffalo-container{
-    width: 100%;
+    width: 105%;
     height:67%;
     background-color: #28a0ff;
     position: relative;
+    left:-2%;
 }
 
 .techbuffalo-content{
@@ -46,4 +47,61 @@
 
 .techbuffalo-posts .post-container .post-link,.techbuffalo-posts .post-container .post-title{
     color:white;
+}
+
+@media only screen and (max-width:600px){
+
+    .techbuffalo-container {
+        text-align: center;
+        height:125vh;
+    }
+
+    .techbuffalo-header{
+        height:6%;
+    }
+
+    .techbuffalo-header img{
+        height: 30px;
+        right: 5%;
+        top: 8%;
+        position: relative;
+    }
+
+    .techbuffalo-header div:nth-child(2){
+        font-size: 20px;
+        position: relative;
+        font-weight: 600;
+        color: white;
+        float: none;
+        vertical-align: top;
+        left:4%;
+    }
+    .techbuffalo-name{
+        display:block;
+        position: relative;
+        margin: 8% 0% 4%;
+        transform: rotate(0deg);
+        left: 0%;
+        top: 0;
+    }
+    .techbuffalo-content{
+        width:100%;
+        padding-top:1%;
+    }
+
+    .techbuffalo-posts{
+        display:block;
+    }
+
+    .techbuffalo-posts .post-container{
+        width: 80%;
+        height: 40vh;
+    }
+    
+    .techbuffalo-posts .post-container .post-placeholder{
+        width: 100%;
+        margin: 0% !important;
+        height: 24vh;
+    }
+
 }

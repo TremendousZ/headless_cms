@@ -1,8 +1,9 @@
 .footer-container {
-    width:100%;
+    width:105%;
     height:30%;
     background-color: #f2f2f2;
     position: relative;
+    left:-2%;
 }
 
 .footer-content{
@@ -44,6 +45,32 @@
 .footer-links li:nth-child(6){
     border-right: none;
 }
+
+@media only screen and (max-width:600px){
+
+    .footer-container{
+        padding-top:3%;
+    }
+
+    .footer-content{
+        width:80%;
+        height:100%;
+        text-align: center;
+        font-size:10px;
+    }
+    .footer-links{
+        width:100%;
+        white-space: inherit;
+    }
+
+    .footer-links li{
+        display: inline;
+        margin-bottom:2%;
+    }
+
+}
+
+
 
 
 

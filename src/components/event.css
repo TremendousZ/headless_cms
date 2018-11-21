@@ -23,3 +23,39 @@
 .event-content .post-container .post-link{
     color:white;
 }
+
+
+@media only screen and (max-width:600px){
+
+    .event-container {
+        text-align: center;
+        height:125vh;
+        width:100%;
+    }
+    .event-name{
+        display:block;
+        position: relative;
+        margin: 8% 0% 4%;
+        transform: rotate(0deg);
+        left: 0%;
+        top: 0;
+    }
+    .event-content{
+        width:100%;
+        padding-top:1%;
+    }
+
+    .event-content .post-container{
+        width: 80%;
+        height: 40vh;
+    }
+    .event-content  > div:nth-child(1){
+        margin-top:2%;
+    }
+    .event-content .post-container .post-placeholder{
+        width: 100%;
+        margin: 0% !important;
+        height: 24vh;
+    }
+
+}

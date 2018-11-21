@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import Post from './post';
 import './techbuffalo.css';
-import TLogo from "../assets/images/Technobuffalo-Logo (1).png";
+import logo from '../assets/images/logo.svg';
 
 class TechBuffalo extends Component{
 
@@ -10,7 +10,9 @@ class TechBuffalo extends Component{
             <div className = "techbuffalo-container">
                 <div className = "techbuffalo-content">
                     <div className = "techbuffalo-header">
-                        <img src = {TLogo}/>
+                    <img src={logo} className="header-logo2" alt="logo" />    
+                    
+
                         <div>GET YOUR TECH FIX</div>
                     </div>
                     <div className = "techbuffalo-posts">

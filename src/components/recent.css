@@ -37,3 +37,36 @@
 .recent-pagination a:hover{
     background-color: black;
 }
+
+@media only screen and (max-width:600px){
+
+    .recent-container {
+        text-align: center;
+        height:738vh;
+        width:100%;
+    }
+    .recent-name{
+        display:block;
+        position: relative;
+        margin: 8% 0% 4%;
+        transform: rotate(0deg);
+        left: 0%;
+        top: 0;
+    }
+    .recent-content{
+        width:100%;
+        padding-top:1%;
+    }
+
+    .recent-content .post-container{
+        width: 80%;
+        height: 40vh;
+    }
+    
+    .recent-content .post-container .post-placeholder{
+        width: 100%;
+        margin: 0% !important;
+        height: 24vh;
+    }
+
+}

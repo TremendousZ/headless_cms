@@ -22,9 +22,6 @@
 }
 
 .logo{
-    background-image: url("../assets/images/nerdy-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
     height: 36px;
     position: relative;
     width: 10%;
