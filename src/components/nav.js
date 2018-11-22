@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Menu from "./menu";
 import {Link} from 'react-router-dom';
 import "./nav.css";
+import NerdyLogo from "../assets/images/nerdy_logo.svg";
 
 
 
@@ -13,7 +14,9 @@ class Nav extends Component {
         return (
             <div className = "nav-container">
                 <div className="nav-wrapper">
+                    
                     <Link to ="/" className = "logo"> 
+                        <img src ={NerdyLogo} />    
                     </Link>
                     <form className = "search-container">
                         <input className = "search-bar" placeholder ={searchBarPlaceholderText} /> 

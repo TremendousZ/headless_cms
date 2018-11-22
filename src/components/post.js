@@ -29,7 +29,7 @@ class Post extends Component {
         return (
             <div className = "post-container">
                 <img src = {this.state.imageURL} className = "post-placeholder"/>
-                <div className = "post-title" dangerouslySetInnerHTML={{ __html: `${this.props.title}`}}></div>
+                <div className = "post-title" dangerouslySetInnerHTML={{ __html: `${this.props.title}`}}>{}</div>
                 <div className = "post-link">Article Source</div>
             </div>
         )
