@@ -12,6 +12,7 @@
     z-index: 1;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .advertise-image p{
     z-index: 2;
@@ -100,4 +101,41 @@
 .contact-consent, .consent-label{
     display:inline-block !important;
     width:10% !important;
+}
+
+@media only screen and (max-width: 600px){
+    .advertise-container{
+        width:100%;
+    }
+
+    .advertise-image{
+        height:30vh;
+    }
+
+    .advertise-image p{
+        font-size:32px;
+    }
+    .advertise-trafic-title{
+        font-size: 30px;
+        font-weight:600;
+    }
+    .advertise-map-image{
+        background-repeat: no-repeat;
+        height: 29vh;
+        width: 100%;
+        background-size: contain;
+    }
+    .gender-breakdown{
+        font-size:30px;
+    }
+    .operating-system-breakdown{
+        font-size:30px;
+        font-weight: 600;
+    }
+    .user-breakdown-image{
+        width:80%;
+        height:20vh;
+        background-size: contain;
+
+    }
 }
