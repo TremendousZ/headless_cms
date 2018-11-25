@@ -30,3 +30,33 @@
     width: 60%;
     padding-bottom: 5%;
 }
+
+@media only screen and (max-width: 600px){
+    .about-us-content{
+        width:100%;
+    }
+
+    .about-us-title{
+        font-size:32px;
+        padding-bottom:8%;
+        font-weight:600;
+    }
+
+    .about-us-description{
+        margin-top:15%;
+        width: 80%;
+        font-family: 'Helvetica Neue', helvetica, sans-serif;
+        font-size:14px;
+        color:#666666;
+    }
+
+    .about-us-description span{
+        font-style:italic;
+        font-weight:600;
+    }
+
+    .about-us-image{
+        width:80%;
+        padding-bottom: 15%;
+    }
+}
