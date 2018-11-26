@@ -34,7 +34,8 @@ class NewsTips extends Component {
                         <input className = "video-url-input" type="text" name = "video-url-list" />
                         <i className = "fa fa-plus-circle"></i>
                         <label className = "consent-statement">I CONSENT TO MY SUBMITTED DATA BEING COLLECTED AND STORED</label>
-                        <input type="checkbox" label = "yes" key = "yes" name = "consent" />
+                        <input type="checkbox" className = "check-box" label = "yes" key = "yes" name = "consent" />
+                        <label className = "check-box-label">YES</label>
                         <button className = "tip-form-submit">SUBMIT</button>
                     </form>
                 </div>
