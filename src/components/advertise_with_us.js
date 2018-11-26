@@ -59,8 +59,8 @@ class Advertise extends Component{
                             <label>YOUR MESSAGE <span></span></label>
                             <textarea  name = "contact-message" />
                             <label>I CONSENT TO MY SUBMITTED DATA BEING COLLECTED AND STORED</label>
-                            <input type = "checkbox" name = "contact-consent" />
-                            <label className = "consent-label">YES</label>
+                            <input type = "checkbox" name = "contact-consent"  id = "advertise-checkbox"/>
+                            <label id = "consent-label">YES</label>
                             
                             
                             <button className = "contact-submit" >SUBMIT</button>
