@@ -21,6 +21,14 @@
 .about-us-description{
     width: 60%;
     margin:3% auto;
+    font-family: 'Roboto Condensed','Helvetica Neue', helvetica,sans-serif;
+    color:#666666;
+}
+
+.about-us-description span{
+    font-style:italic;
+    font-weight:900;
+    font-size: 110%;
 }
 
 .about-us-image{
@@ -31,7 +39,8 @@
     padding-bottom: 5%;
 }
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 700px){
     .about-us-content{
         width:100%;
     }
@@ -45,18 +54,20 @@
     .about-us-description{
         margin-top:15%;
         width: 80%;
-        font-family: 'Helvetica Neue', helvetica, sans-serif;
         font-size:14px;
-        color:#666666;
-    }
-
-    .about-us-description span{
-        font-style:italic;
-        font-weight:600;
     }
 
     .about-us-image{
         width:80%;
         padding-bottom: 15%;
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:701px){
+    .about-us-content{
+        width:100%;
+    }
+    .about-us-title{
+        width:60%;
     }
 }

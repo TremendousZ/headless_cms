@@ -11,7 +11,7 @@
     display:block;
     padding-top: 6%;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 700;
     border-bottom: 1px solid #e6e6e6;
     width: 80%;
     margin:0 auto;
@@ -33,12 +33,16 @@
 .news-tips-form label{
     display: block;
     width: 40%;
-    color: #666666;
-    font-size: 14px;
     font-weight: 700;
+    font-size: 14px !important;
+    font-family: 'Roboto Condensed','Helvetica Neue', helvetica,sans-serif;
+    padding:1.5% 0;
+    color: #666666;
+    letter-spacing: .5pt;
 }
-
-
+.news-tips-form input, .news-tips-form textarea{
+    border: 1px solid #e1e1e1;
+}
 
 .confirm-email, .email-input, .email-input-label, .email-confirm-label{
     display:inline-block !important;
@@ -76,6 +80,8 @@
     background-color: #FBBE00;
     color: white;
     height: 36px;
+    font-size: 16px;
+    text-align: center;
 }
 
 @media only screen and (max-width:700px){
@@ -99,7 +105,6 @@
         height: 139vh;
     }
     .news-tips-form input, .news-tips-form textarea{
-        border: 1px solid #e1e1e1;
         width:80%;
     }
     .news-tips-form label {
@@ -137,6 +142,40 @@
     .tip-form-submit{
         width:25%;
         display:block;
+    }
+
+}
+
+@media only screen and (max-width:1000px) and (min-width:701px){
+    .news-tips-content{
+        width:100%;
+    }
+    .news-tips-title{
+        width:70%;
+    }
+    .news-tips-form{
+        width:70%;
+        padding-bottom: 5%;
+    }
+    .news-tip-form input, .news-tip-form label{
+        width:47%;
+    }
+
+    .consent-statement{
+        display:block;
+    }
+
+    .news-checkbox {
+        width:5% !important;
+        display: inline-block !important;
+    }
+
+    #news-checkbox-label{
+        display: inline-block;
+        vertical-align: super;
+    }
+    .tip-form-submit{
+        display: block;
     }
 
 }

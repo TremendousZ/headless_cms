@@ -60,12 +60,28 @@
     color: #808080;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
 .logo{
     width:29%
 }
+}
 
+@media only screen and (max-width:1000px) and (min-width:701px){
+ 
+.logo img{
+    position: fixed;
+    left:1%;
+}
 
+.dropdown-trigger{
+    height:56px;
+    right:0;
+}
 
+.search-bar{
+    width:130%;
+    position: relative;
+    left:-25%;
+}
 }
 
