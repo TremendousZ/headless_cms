@@ -16,7 +16,7 @@
     width: 80%;
     margin:0 auto;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .nerdy-crew-title{
         font-size:32px;
         border-bottom: none;
@@ -32,3 +32,18 @@
 
 }
 
+@media only screen and (max-width:1000px) and (min-width:701px){
+    .crew-content{
+        width:100%;
+    }
+    .nerdy-crew-title{
+        width:70%;
+    }
+    .profile-container{
+        width:100%;
+    }
+
+    .profile-container .profile-post img{
+        width:40%;
+    }
+}
