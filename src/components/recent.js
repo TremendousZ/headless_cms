@@ -21,7 +21,7 @@ class Recent extends Component{
     
     createPosts(){
         let array = this.props.postList.data;
-        for (let index = 2; index < 20; index++){
+        for (let index = 2; index < array.length; index++){
             let post = <Post key = {Math.random() * 1000}  id = {array[index].featured_media} title = {array[index].title.rendered} {...this.state}/>;
             this.cardContainer.push(post);
         }
@@ -31,6 +31,7 @@ class Recent extends Component{
     }
 
     render(){
+        console.log("THIS PROPS!!!!", this.props.postList)
         return(
             <div className = "recent-container">
                 <div className = "recent-content">

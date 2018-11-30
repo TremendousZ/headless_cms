@@ -13,12 +13,12 @@ class Categories extends Component {
             categoryName:"",
             response: null
         }
-
+        this.endpoint;
     }
 
     async componentDidMount(){
         const {category, categoryName, reviews} = this.props.match.params;
-        console.log(category,categoryName, reviews);
+        this.determineEndpoint( categoryName );
         this.styleCategoryName(categoryName, category, reviews);
         this.setState({
             category,
@@ -26,7 +26,49 @@ class Categories extends Component {
         if(reviews !=="crews-2"){
             this.getData();
         }
-        
+       
+    }
+
+    determineEndpoint( catName ){
+
+        switch(catName){
+            case "anime-news":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=177";
+            break;
+            case "comic-news":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=46";
+            break;
+            case "gaming-news":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=53";
+            break;
+            case "movie-news":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=39";
+            break;
+            case "toy-news":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=64";
+            break;
+            case "tv-news":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=31";
+            break;
+            case "gaming-rumors":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=54";
+            break;
+            case "movie-rumors":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=40";
+            break;
+            case "toy-rumors":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=65";
+            break;
+            case "movie-trailers":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=89";
+            break;
+            case "toy-announcements":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=66";
+            break;
+            case "tv-features":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=35";
+            break;
+        }
     }
 
     styleCategoryName( categoryName, category, reviews ){
@@ -67,9 +109,9 @@ class Categories extends Component {
     }
 
     async getData(){
-        let categoryURL = `https://thenerdy.com/wp-json/wp/v2/posts/${this.state.category}/${this.state.categoryName}/`;
+        let categoryURL = `${this.endpoint}`;
         let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts";
-        await axios.get(dataURL,{
+        await axios.get(categoryURL,{
             params: {
                 per_page:20,
             }

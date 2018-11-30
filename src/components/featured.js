@@ -27,8 +27,8 @@ class Featured extends Component {
     // }
 
     render (){
-        let movie = this.state.movies;
-        console.log("this state movie",this.state.movies);
+        
+       
         return (
         <div className = "featured-container">
             <div className = "label">FEATURED</div>

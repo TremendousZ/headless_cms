@@ -18,7 +18,7 @@ class HomePage extends Component {
 
     async componentDidMount(){
         this.getData();
-        this.getMore();
+        // this.getMore();
     }
 
     async getData(){
@@ -33,7 +33,7 @@ class HomePage extends Component {
     }
 
     async getMore(){
-        let dataURL = "https://thenerdy.com/wp-json/";
+        let dataURL = "https://thenerdy.com/wp-json/wp/v2/categories";
         const respObj = await axios.get(dataURL)
             console.log("LOOK FOR MORE HERE RESPONSE OBJECT" , respObj);
         
