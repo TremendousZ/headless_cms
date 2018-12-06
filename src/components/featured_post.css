@@ -1,0 +1,46 @@
+.featured-image{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.featured-screen{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    display:none;
+    background-color: rgba(251,190,0,0.85);
+}
+.featured-screen:hover{
+    display:block;
+}
+.featured-post-container{
+    width:33%;
+    display: inline-block;
+    height:100%;
+    position: relative;
+}
+.featured-post-container:hover .featured-screen{
+    display: block;
+}
+.featured-link{
+    position: absolute;
+    top:3%;
+    left:3%;
+    border: 1px solid white;
+    color:white;
+    z-index: 1;
+    padding:1%;
+}
+
+.featured-title{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 65%;
+    padding:3%;
+    font-size:20px;
+    font-weight:500;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+}
