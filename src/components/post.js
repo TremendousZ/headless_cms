@@ -15,10 +15,10 @@ class Post extends Component {
     }
 
     async getImageData(){
-        if(this.props.id == undefined){
+        if(this.props.imageId == undefined){
             return;
         }
-        let dataURL = "https://thenerdy.com/wp-json/wp/v2/media/" + this.props.id ;
+        let dataURL = "https://thenerdy.com/wp-json/wp/v2/media/" + this.props.imageId ;
         const resp = await axios.get(dataURL);
         this.setState({
             imageURL:resp.data.guid.rendered
