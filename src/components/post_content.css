@@ -1,8 +1,18 @@
 .single-post-container{
     width:100%;
     height:100%;
+    background-color: #f2f2f2;
 }
 
+.single-post{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}
+.single-terms{
+    float:right;
+}
 .bg-img{
     width:100%;
     height:100%;
@@ -20,9 +30,8 @@
     border-bottom:1px solid #666666;
     display: block;
     margin: 0 auto;
-    padding:4%;
+    
 }
-
 .single-title span{
     position: absolute;
     top: 70%;
@@ -36,17 +45,18 @@
     font-size:60px;
     text-align: center;
 }
-.single-title img{
-    position: absolute;
-    top:0;
-    left:50%;
-    transform:translateX(-50%);
-    z-index: -1;
-}
+
 .single-content > .wrapper{
     width:80%;
     display: block;
     margin: 0 auto;
+}
+.wrapper .single-title img {
+    bottom: -30px;
+    left: 50%;
+    margin-left: -235px;
+    position: absolute;
+    opacity: 0.2;
 }
 .twothird p {
     width:65%;
@@ -54,17 +64,288 @@
     font-family: 'Helvetica Neue', helvetica, sans-serif;
     font-size: 100%;
 }
+.half.post{
+    width:50%;
+    display: inline-block;
+}
+
+.twothird.middle{
+    display: block;
+    margin:0 auto;
+}
 
 iframe{
     width: 100%;
     height: 46vh;
 }
 
-
-.single-post-title{
-
+.attribution {
+    color: #000;
+    font-family: 'Roboto Condensed','Helvetica Neue', helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 190%;
+    text-transform: uppercase;
+    margin: 30px 0;
+    overflow: hidden;
 }
 
-.single-post-content{
+/* Image Carousel */
 
+.gallery {
+    background-color: #333333;
+    padding-bottom: 30px;
+}
+.container {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}
+.gallery .viewer {
+    min-height: 1px;
+    overflow: visible;
+    position: relative;
+    transition: height 0.2s;
+}
+.gallery .viewer + .controls {
+    color: #999;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 970px;
+}
+.row {
+    margin: 30px 0;
+    position: relative;
+    clear: both;
+}
+.viewer{
+    min-height: 1px;
+    overflow: visible;
+    position: relative;
+    transition: height 0.2s;
+}
+.controls{
+    color: #999;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.gallery .viewer > .controls a .svg-icon {
+    display: block;
+    fill: #fff;
+    height: 28px;
+    width: 28px;
+}
+.section-label, .adLabel {
+    color: #b3b3b3;
+    font-family: 'Oswald';
+    font-size: 14px !important;
+    font-weight: 300;
+    text-transform: uppercase;
+    left: -232px;
+    margin: 0 !important;
+    position: absolute;
+    text-align: right;
+    top: 0px;
+    transform: rotate(270deg);
+    transform-origin: top right;
+    width: 200px;
+}
+.svg-icon {
+    height: 18px;
+    transition: 0.2s all;
+    width: 18px;
+}
+.gallery .viewer:hover > .controls {
+    opacity: 1;
+}
+
+
+.gallery .viewer > .controls {
+    opacity: 0;
+    transition: 0.2s all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.row .twothird.middled {
+    float: none;
+    margin: 0 auto;
+}
+.twothird.middled p{
+    width:80%;
+}
+.row .twothird {
+    float: left;
+    width: 635px;
+}
+.gallery .viewer .row {
+    margin-bottom: 0;
+}
+.gallery .row {
+    margin-right: -35px;
+}
+.gallery .viewer.currentImage .gallery-fullscreen svg {
+    fill: #28a0ff;
+}
+.svg-icon {
+    height: 18px;
+    transition: 0.2s all;
+    width: 18px;
+}
+.row {
+    margin: 30px 0;
+    position: relative;
+    clear: both;
+}
+.gallery .viewer > .controls a.prev {
+    left: 0;
+}
+.gallery .viewer > .controls a.next {
+    right: 0;
+}
+.gallery .viewer > .controls a:hover {
+    background-color: #28A0FF;
+}
+.gallery .viewer.currentImage {
+    background-color: #000;
+    cursor: pointer;
+    max-height: 635px;
+    position: relative;
+    z-index: 20;
+}
+.gallery .viewer.currentImage img{
+    width:100%;
+    height:auto;
+}
+.gallery .viewer > .controls a {
+    background-color: rgba(0,0,0,0.3);
+    padding: 11px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    width: 28px;
+}
+
+.gallery .viewer > .controls a.prev .tab {
+    padding-right: 3px;
+}
+.gallery .viewer > .controls a .tab {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -19px;
+}
+
+.gallery .owl-carousel .owl-stage-outer {
+    padding: 1rem 0;
+}
+.gallery .viewer + .controls .count {
+    display: inline-block;
+    font-family: 'Oswald';
+    font-weight: 200;
+    font-size: 12px;
+}
+.gallery .viewer + .controls * {
+    display: inline;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.gallery .viewer + .controls .count div {
+    display: block;
+    width: 30px;
+}
+.gallery .viewer + .controls .count div + div {
+    border-top: 1px solid;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    display: flex;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-stage {
+    transition: all 0s ease 0s;
+    width: 4441px;
+    padding-left: 150px;
+    padding-right: 150px;
+    transform: translate3d(-667px, 0px, 0px);
+}
+.gallery .owl-carousel .owl-stage {
+    margin-left: -167px;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+}
+.owl-item {
+    width: 98.571px;
+    margin-right: 35px;
+}
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.gallery .owl-item {
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+.owl-item {
+    width: 98.571px;
+    margin-right: 35px;
+}
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+.thumbnails a{
+    margin: 2%;
+    width: 100%;
+    overflow: initial;
+}
+.post.third.checktitle{
+    width: 33%;
+    display: inline-block;
+}
+.post.third.overflow{
+    display: inline-block;
 }
