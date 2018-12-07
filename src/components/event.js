@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import './event.css';
 import Post from './post';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 
 class Event extends Component{
@@ -33,7 +34,8 @@ class Event extends Component{
 
     createPosts(array){
         for (let index = 0; index < array.length; index++){
-            let post = <Post key = {Math.random() * 1000}  id = {array[index].featured_media} title = {array[index].title.rendered} {...this.state}/>;
+            let slug = '/post/' + array[index].slug +"/"+ array[index].id;
+            let post = <Link to ={slug}><Post key = {Math.random() * 1000}  imageId = {array[index].featured_media} title = {array[index].title.rendered} id={array[index].id} {...this.state}/></Link>;
             this.events.push(post);
         }
         this.setState({

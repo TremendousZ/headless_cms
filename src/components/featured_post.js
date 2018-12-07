@@ -15,10 +15,10 @@ class FeaturedPost extends Component{
     }
 
     async getImageData(){
-        if(this.props.postId == undefined){
+        if(this.props.postImageId == undefined){
             return;
         }
-        let dataURL = "https://thenerdy.com/wp-json/wp/v2/media/" + this.props.postId ;
+        let dataURL = "https://thenerdy.com/wp-json/wp/v2/media/" + this.props.postImageId ;
         const resp = await axios.get(dataURL);
         this.setState({
             imageURL:resp.data.guid.rendered

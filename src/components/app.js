@@ -10,6 +10,7 @@ import Advertise from './advertise_with_us';
 import Footer from './footer'; 
 import NewsTips from './news_tips';
 import PrivacyPolicy from './privacy-policy';
+import PostContent from './post_content';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 const App = () => (
@@ -22,10 +23,11 @@ const App = () => (
                 <Route exact path = '/crew/' component = {TheCrew} />
                 <Route exact path = '/about-us/' component = {AboutUs} />
                 <Route exact path = '/news-tips/' component = {NewsTips} />
-                <Route path = '/category/:category/:categoryName/' component = {Categories} />
+                <Route exact path = '/category/:category/:categoryName/' component = {Categories} />
                 <Route path = '/:category/:categoryName' component = {Categories} />
                 <Route exact path = '/advertise/' component = {Advertise} />
                 <Route exact path = '/privacy/' component = {PrivacyPolicy} />
+                <Route path ='/post/:slug/:postid' component = {PostContent} />
                 <TechBuffalo />
                 <Footer />
             </div>
