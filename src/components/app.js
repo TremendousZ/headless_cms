@@ -28,7 +28,7 @@ const App = () => (
                 <Route exact path = '/advertise/' component = {Advertise} />
                 <Route exact path = '/privacy/' component = {PrivacyPolicy} />
                 <Route path ='/post/:slug/:postid' component = {PostContent} />
-                <TechBuffalo />
+                {/* <TechBuffalo /> */}
                 <Footer />
             </div>
         </Switch>

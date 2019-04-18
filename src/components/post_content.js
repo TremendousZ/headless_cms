@@ -19,7 +19,6 @@ class PostContent extends Component{
            return;
        }
         let postData = "https://thenerdy.com/wp-json/post/v1/" + this.props.match.params.postid;
-        console.log("AXIOS DATA URL ", postData);
         await axios.get(postData).then(response=>{
                 this.setState({response});
                 this.createSinglePost(response.data);

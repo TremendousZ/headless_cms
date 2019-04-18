@@ -3,11 +3,15 @@
 }
 
 .dropdown-trigger{
-    padding: 1% 1.5%;
+    padding: 14px 1.5%;
     position: absolute;
     top:0;
-    right:6.5%;
+    right:17.5%;
     z-index: 1;
+    color: #808080;
+}
+.dropdown-trigger i {
+    padding-left:6%;
 }
 
 .dropdown-trigger:hover{ 
@@ -59,7 +63,7 @@
     background-color: black;
     color: white;
     display: inline-block;
-    width:55%;
+    width:44%;
     padding: 1.5rem 1rem;
 }
 
@@ -87,23 +91,26 @@ a{
 
 .menu-links{
     height:100%;
-    width: 13%;
+    width: 14%;
     background-color:#f2f2f2;
     color: #999;
     display: inline-block;
     vertical-align: top;
     padding: 1.5rem .5rem;
     box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+    white-space: nowrap;
 }
 .menu-links ul{
-    padding: 16px .5rem;
+    padding: 0px .5rem 16px;
     text-align: right;
 }
 
 .menu-links li{
     margin: 10% 0;
 }
-
+.menu-links ul li{
+    text-align:center;
+}
 .menu-links li, .menu-links a{
     list-style-type: none;
     font-size: 18px;
@@ -228,14 +235,16 @@ a{
         width:95%;
         padding: 0rem 1rem;
         text-align: left;
+        
     }
-
     .menu-links li {
         display: inline;
         padding-right: 2%;
+        white-space: nowrap;
     }
     .menu-links ul {
         text-align: left;
+        white-space: nowrap;
     }
 
     .menu-pages,.menu-links,.menu-sections{
@@ -261,4 +270,18 @@ a{
         padding:0;
     }
     
+}
+@media only screen and (max-width:1440px){
+    .menu-sections ul{
+        padding: 12px 0px;
+    }
+    .menu-sections label{
+        padding-left:0%;
+    }
+    .menu-pages, .menu-sections, .menu-links{
+        padding-bottom:0rem !important;
+    }
+    .menu-links{
+        padding-top:1rem;
+    }
 }

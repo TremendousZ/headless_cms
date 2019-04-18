@@ -33,7 +33,6 @@ class Recent extends Component{
     }
 
     render(){
-        console.log("THIS PROPS!!!!", this.props.postList)
         return(
             <div className = "recent-container">
                 <div className = "recent-content">

@@ -68,6 +68,9 @@ class Categories extends Component {
             case "tv-features":
             this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=35";
             break;
+            case "galleries":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=42";
+            break;
         }
     }
 
