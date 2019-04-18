@@ -26,7 +26,7 @@ class Pagination extends Component {
 
     createPagination(){
             let startingPage = this.props.startingPage;
-            for(let index = startingPage; index < startingPage + 9; index++){
+            for(let index = startingPage; index < startingPage + 6; index++){
                 let linkTo = `/page/${index}/`;
                 let links = <Link to ={linkTo} key ={Math.random()*10} onClick={this.checkChange}>{index}</Link>;
                 this.linkContainer.push(links);
@@ -37,19 +37,18 @@ class Pagination extends Component {
         }   
 
     render(){
-        console.log("PAGINATION PROPS", this.props);
-        if(this.props.fromPages === "true"){
+        if(this.props.startingPage > 2 && this.props.fromPages === "true"){
             let prev = `/page/${this.props.startingPage - 1}/`;
             let next = `/page/${this.props.startingPage + 1}/`
             return (
                 <div className = "recent-pagination">
-                    <Link to = {prev} onClick={this.checkChange}>PREV</Link>
+                    <Link class = "previous" to = {prev} onClick={this.checkChange}>PREVIOUS</Link>
                     <Link to="/">1</Link>
                     <div>...</div>
                     {this.state.linkContainer}
                     <div>...</div>
-                    <Link to="/page/39/" onClick={this.checkChange}>39</Link>
-                    <Link to={next} onClick={this.checkChange}>NEXT</Link>
+                    <Link to="/page/48/" onClick={this.checkChange}>48</Link>
+                    <Link class = "next" to={next} onClick={this.checkChange}>NEXT</Link>
                 </div>
             )
         } else {
@@ -60,11 +59,8 @@ class Pagination extends Component {
                     <Link to="/page/3/">3</Link>
                     <Link to="/page/4/">4</Link>
                     <Link to="/page/5/">5</Link>
-                    <Link to="/page/6/">6</Link>
-                    <Link to="/page/7/">7</Link>
-                    <Link to="/page/8/">8</Link>
                     <div>...</div>
-                    <Link to="/page/39/">39</Link>
+                    <Link to="/page/48/">48</Link>
                 </div>
                 )
         }   

@@ -47,7 +47,6 @@ class Featured extends Component {
     
 
     render (){
-        console.log("FEATURED RESPONSE CONSOLE LOG", this.state.response);
         return (
         <div className = "featured-container">
             <div className = "label">FEATURED</div>

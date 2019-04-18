@@ -6,44 +6,73 @@
 
 .recent-content{
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
     position: relative;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
+.recent-content a{
+    width: 33.125%;
+}
+.recent-content a .post-container{
+    width:99%;
+}
 .recent-name{
     position: absolute;
-    left: -4%;
-    top:5%;
+    left: -4.25%;
+    top:35px;
     transform: rotate(270deg);
     color:#b3b3b3;
 }
 
 .recent-pagination{
     text-align: center;
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
     display: flex;
+    width:60%;
+    margin: 0 auto;
     justify-content: center;
 }
 
 .recent-pagination a {
-    width: 3%;
-    height: 5vmin;
+    width: 40px;
+    height: 40px;
     margin: 1%;
+    padding-top:5px;
     background-color: #FBBE00;
     color: white;
     text-decoration: none;
 }
-
+.recent-pagination .previous{
+    height:40px;
+    width: 85px;
+}
+.recent-pagination .next {
+    width:40px;
+}
 .recent-pagination a:hover{
     background-color: black;
 }
-
+.recent-pagination div{
+    margin:1%;
+}
+@media only screen and (max-width:1440px){
+    .recent-content{
+        width:65%;
+    }
+}
+@media only screen and (max-width:1000px){
+    .recent-name{
+        left:-6%;
+    }
+}
 @media only screen and (max-width:700px){
 
     .recent-container {
         text-align: center;
-        height:738vh;
         width:100%;
+        display: block;
     }
     .recent-name{
         display:block;
@@ -56,17 +85,32 @@
     .recent-content{
         width:100%;
         padding-top:1%;
+        display: block;
     }
 
-    .recent-content .post-container{
-        width: 80%;
-        height: 40vh;
+    .recent-content a .post-container{
+        width: 50%;
+        height: 45vh;
+        display:block;
+        margin: 0 auto;
     }
     
     .recent-content .post-container .post-placeholder{
         width: 100%;
-        margin: 0% !important;
-        height: 24vh;
+        margin: 0%;
+        height: 29vh;
     }
 
+}
+@media only screen and (max-width:400px){
+    .recent-content{
+        display:block;
+        
+    }
+    .recent-content a .post-container{
+        width:80%;
+    }
+    .recent-pagination{
+        width:100%;
+    }
 }

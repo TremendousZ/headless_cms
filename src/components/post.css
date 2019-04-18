@@ -1,14 +1,16 @@
 .post-container {
     height:100%;
-    width: 33%;
+    width: 33.3%;
     display: inline-block;
     vertical-align: top;
 }
-
+.post-container img:hover + .post-title{
+    color: #FBBE00;
+}
 .post-placeholder{
-    margin: 8% 5%;
-    height: 30vh;
-    width: 90%;
+    margin: 8% 0%;
+    height: 27vh;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -19,15 +21,19 @@
     font-size:20px;
     overflow: auto;
     font-weight: 400;
+    line-height: 130%;
 }
 
 .post-link{
     color: #FBBE00;
     text-align: center;
     font-size:12px;
+    width:20%;
+    white-space: nowrap;
     display: block;
     position: relative;
     margin: 2.5% auto;
+    border: 1px solid transparent;
 }
 
 .post-link:hover{

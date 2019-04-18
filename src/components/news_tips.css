@@ -83,6 +83,44 @@
     font-size: 16px;
     text-align: center;
 }
+.news-checkbox{
+    display: inline-block !important;
+    width:5% !important;
+}
+#news-checkbox-label{
+    display:inline-block;
+    width:90%;
+    vertical-align: bottom;
+}
+@media only screen and (max-width:1000px){
+    .news-tips-content{
+        width:100%;
+    }
+    .news-tips-title{
+        width:70%;
+    }
+    .news-tips-form{
+        width:70%;
+        padding-bottom: 5%;
+    }
+    .news-tip-form input, .news-tip-form label{
+        width:47%;
+    }
+
+    .consent-statement{
+        display:block;
+    }
+
+    .news-checkbox {
+        width:5% !important;
+        display: inline-block !important;
+    }
+
+    .tip-form-submit{
+        display: block;
+    }
+
+}
 
 @media only screen and (max-width:700px){
     .news-tips-title{
@@ -102,7 +140,7 @@
 
     .news-tips-form{
         width:80%;
-        height: 139vh;
+        padding-bottom:1%;
     }
     .news-tips-form input, .news-tips-form textarea{
         width:80%;
@@ -142,40 +180,8 @@
     .tip-form-submit{
         width:25%;
         display:block;
+        margin-bottom:5%;
     }
 
 }
 
-@media only screen and (max-width:1000px) and (min-width:701px){
-    .news-tips-content{
-        width:100%;
-    }
-    .news-tips-title{
-        width:70%;
-    }
-    .news-tips-form{
-        width:70%;
-        padding-bottom: 5%;
-    }
-    .news-tip-form input, .news-tip-form label{
-        width:47%;
-    }
-
-    .consent-statement{
-        display:block;
-    }
-
-    .news-checkbox {
-        width:5% !important;
-        display: inline-block !important;
-    }
-
-    #news-checkbox-label{
-        display: inline-block;
-        vertical-align: super;
-    }
-    .tip-form-submit{
-        display: block;
-    }
-
-}

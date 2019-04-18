@@ -55,7 +55,7 @@ class Pages extends Component {
                     <div className = "body-container">
                         <Now  post1 = {response.data[0]} post2 = {response.data[1]} />
                         <Recent postList = {response} fromPages = "true" startingPage={this.startingPage} />
-                        <Footer />
+                        {/* <Footer /> */}
                     </div>
                 </div>
             )
