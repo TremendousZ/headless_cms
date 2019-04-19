@@ -36,8 +36,10 @@
 
 .gender-breakdown{
     margin-top: 5%;
+    margin-bottom:5%;
     border-top:1px solid #e6e6e6;
     border-bottom:1px solid #e6e6e6;
+    height:300px;
 }
 
 .operating-system-breakdown{
@@ -51,7 +53,9 @@
 
 .advertise-map-image{
     background-image:url("../assets/images/tb-adv-world-map.jpg");
-    height:90vh;
+    height: 80vh;
+    
+    background-repeat: no-repeat;
 }
 
 .user-breakdown-image{
@@ -75,6 +79,56 @@
     display: block;
     width: 45%;
     height: 36px;
+}
+.advertising-stat{
+    position: absolute;
+
+}
+.advertise-map-image{
+    position: relative;
+}
+.advertise-map-image div{
+    text-align: center;
+}
+.advertise-map-image div strong{
+    font-size:24px;
+}
+.advertise-map-image div:nth-child(1){
+    left:15%;
+    top:13%;
+}
+.advertise-map-image div:nth-child(2){
+    left:13%;
+    top:28%;
+}
+.advertise-map-image div:nth-child(3){
+    left:34%;
+    top:25%;
+}
+.advertise-map-image div:nth-child(4){
+    left:54%;
+    top:40%;
+}
+.advertise-map-image div:nth-child(5){
+    left:60%;
+    top:18%;
+}
+.advertise-map-image div:nth-child(6){
+    left:68%;
+    top:64%;
+}
+
+.male, .female{
+    display: inline-block;
+    width:50%;
+    font-size:48px;
+}
+.male i, .female i{
+    padding-left:5%;
+}
+.demographic{
+    font-size:20px;
+    color:#777;
 }
 .advertise-form label{
     display: block;
@@ -110,7 +164,7 @@
 @media only screen and (max-width: 700px){
     .advertise-container{
         width:100%;
-        height: 370vh;
+        height: 446vh;
     }
 
     .advertise-image{
@@ -163,5 +217,19 @@
     #consent-label{
         display: inline-block !important;
         width:5% !important;
+    }
+    .advertising-stat span{
+        display: none;
+    }
+    .gender-breakdown{
+        height:350px;
+    }
+    .male, .female{
+        width:100%;
+    }
+    .male i, .female i{
+        padding-left:5%;
+        font-size:45px;
+        top:0;
     }
 }

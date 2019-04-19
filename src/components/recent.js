@@ -32,6 +32,8 @@ class Recent extends Component{
         })
     }
 
+    
+
     render(){
         return(
             <div className = "recent-container">

@@ -13,7 +13,7 @@ class Profile extends Component {
         return (
             <div className = "profile-container">
                 <div className = "profile-post">
-                    <img />
+                    <img src={this.props.crewImage}/>
                     <div className = "profile-name">
                         {this.props.profileName}
                     </div>

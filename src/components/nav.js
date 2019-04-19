@@ -15,7 +15,7 @@ class Nav extends Component {
             <div className = "nav-container">
                 <div className="nav-wrapper">
                     
-                    <Link to ="/" className = "logo"> 
+                    <Link to ="/" className = "logo" rel="nofollow"> 
                         <img src ={NerdyLogo} />    
                     </Link>
                     <form className = "search-container">

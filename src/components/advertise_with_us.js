@@ -17,20 +17,36 @@ class Advertise extends Component{
                     </div>
                     <div className = "advertise-traffic-title">
                         Where Our Traffic Comes From
-                    </div>
-                    <div className = "advertise-map-image">
+                        
 
                     </div>
+                    <div className = "advertise-map-image">
+                        <div class="advertising-stat"><strong>5.69%</strong><br>
+                            </br><span>Canada</span></div>
+                            <div class="advertising-stat"><strong>55.19%</strong><br></br>
+                            <span>United States</span>
+                            </div>
+                            <div class="advertising-stat"><strong>7.62%</strong>
+                            <br></br><span>United Kingdom</span></div>
+                            <div class="advertising-stat"><strong>2.56%</strong>
+                            <br></br><span>India</span></div>
+                            <div class="advertising-stat"><strong>24%</strong>
+                            <br></br><span>Other</span></div>
+                            <div class="advertising-stat"><strong>2.17%</strong>
+                            <br></br><span>Australia</span></div>
+                    </div>
                     <div className = "gender-breakdown">
-                        Gender Breakdown
-                        <div>
-                            70%
+                        <div>Gender Breakdown</div>
+                        <div class="male">
+                            70%<i class="fa fa-mars"/>
+                            <div class="demographic">Male Viewership</div>
                         </div>
-                        <div>
-                            30%
+                        <div class="female">
+                            30%<i class="fa fa-venus"/>
+                            <div class="demographic">Female Viewership</div>
                         </div>
-                        <div>Male Viewership</div>
-                        <div>Female Viewership</div>
+                        
+                        
                     </div>
                     <div className = "operating-system-breakdown">
                         Operating System Breakdown
