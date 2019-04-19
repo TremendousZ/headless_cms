@@ -35,7 +35,6 @@ class PostContent extends Component{
         })
     }
     render(){
-        console.log("post-CoNTENT PROPS", this.props, this.state);
         return (
             <div className = "single-post-container">
                 <div className ="single-post">

@@ -18,11 +18,30 @@ class Categories extends Component {
 
     async componentDidMount(){
         const {category, categoryName, reviews} = this.props.match.params;
+        let newCategory; 
+        if(category === "label"){
+            switch(categoryName){
+                case "gallery":
+                newCategory = "gallery";
+                break;
+                case "reviews":
+                newCategory = "reviews";
+                break;
+                case "giveaway":
+                newCategory = "giveaway";
+                break;
+            }
+            this.setState({
+                category: newCategory,
+            })
+        } else {
+            this.setState({
+                category,
+            })
+        }
         this.determineEndpoint( categoryName );
         this.styleCategoryName(categoryName, category, reviews);
-        this.setState({
-            category,
-        })
+        
         if(reviews !=="crews-2"){
             this.getData();
         }
@@ -68,8 +87,14 @@ class Categories extends Component {
             case "tv-features":
             this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=35";
             break;
-            case "galleries":
-            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?categories=42";
+            case "reviews":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?label=105";
+            break;
+            case "giveaway":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?label=96";
+            break;
+            case "gallery":
+            this.endpoint = "https://thenerdy.com/wp-json/wp/v2/posts?label=159";
             break;
         }
     }
@@ -116,12 +141,14 @@ class Categories extends Component {
         let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts";
         await axios.get(categoryURL,{
             params: {
-                per_page:20,
+                per_page:11,
             }
         }).then(response=>{
             this.setState({response});
         });
     }
+
+   
 
     render(){
         const { response } = this.state;

@@ -20,7 +20,7 @@ class Featured extends Component {
       
 
     async getData(){
-        let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts?categories=176";
+        let dataURL = "https://thenerdy.com/wp-json/wp/v2/posts?label=93";
         await axios.get(dataURL,{
             params: {
                 per_page:3,

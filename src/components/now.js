@@ -22,8 +22,8 @@ class Now extends Component{
             <div className = "now-container">
             <span>NOW</span>
                 <div className = "now-box">
-                   <Link to={slug1}><Post imageId = {this.props.post1.featured_media} title = {this.props.post1.title.rendered} id ={this.props.post1.id} /></Link> 
-                    <Link to={slug2}><Post imageId = {this.props.post2.featured_media} title = {this.props.post2.title.rendered} id ={this.props.post1.id} /></Link>
+                   <Link to={slug1}><Post imageId = {this.props.post1.featured_media} title = {this.props.post1.title.rendered} id ={this.props.post1.id}  rel="nofollow"/></Link> 
+                    <Link to={slug2}><Post imageId = {this.props.post2.featured_media} title = {this.props.post2.title.rendered} id ={this.props.post1.id}  rel="nofollow"/></Link>
                 </div>
             </div>
         )
